@@ -1,10 +1,38 @@
 * {
-  /* border-top: 10px solid blue; */
+  /* This is often a first thing that we do in a project, to do a global reset of margin and padding */
+
+  margin: 0;
+  padding: 0;
 }
 
 body {
   color: #444;
   font-family: sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 14px;
+}
+
+article {
+  margin-bottom: 50px;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* The first value below is for top and bottom, and the second one for left and right */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.page-header {
+  margin-bottom: 40px;
 }
 
 h1,
@@ -21,10 +49,12 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -36,10 +66,18 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 #author {
@@ -61,14 +99,12 @@ li {
   list-style-type: none;
 }
 
-.main-header {
-  background-color: #f7f7f7;
-}
-
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid hsla(188, 77%, 25%, 0.887);
   border-bottom: 5px solid hsla(188, 77%, 25%, 0.887);
+  padding: 50px 0;
+  width: 500px;
 }
 
 li:first-child {
@@ -77,6 +113,7 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
+  margin-bottom: 0;
 }
 
 li:nth-child(2) {
@@ -103,6 +140,12 @@ a:active {
   background-color: palevioletred;
 }
 
+.picture {
+  width: 100%;
+  /* Below auto setting applies only if we set the height somewhere (in HTML) already, so that the picture is proportional */
+  height: auto;
+}
+
 /* RESOLVING CONFLICTS */
 
 /* .copyright {
@@ -120,7 +163,3 @@ a:active {
 footer p {
   color: green;
 } */
-
-nav {
-  font-size: 14px;
-}
