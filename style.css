@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+/* BIGGER ELEMENTS  */
+
 body {
   color: #444;
   font-family: sans-serif;
@@ -28,12 +30,14 @@ article {
   /* The first value below is for top and bottom, and the second one for left and right */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .page-header {
   margin-bottom: 40px;
 }
+
+/* SMALLER ELEMENTS */
 
 h1,
 h2,
@@ -144,6 +148,16 @@ a:active {
   width: 100%;
   /* Below auto setting applies only if we set the height somewhere (in HTML) already, so that the picture is proportional */
   height: auto;
+}
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 /* RESOLVING CONFLICTS */
